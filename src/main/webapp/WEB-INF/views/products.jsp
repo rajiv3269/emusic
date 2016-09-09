@@ -1,4 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@include file = "/WEB-INF/views/template/header.jsp" %>
 	<%-- <!-- Carousel
     ================================================== -->
@@ -96,6 +97,7 @@
 						<th>Category</th>
 						<th>Condition</th>
 						<th>Price</th>
+						<th></th>
 					</tr>
 				</thead>
 				<c:forEach items="${productlist}" var="products">
@@ -105,6 +107,8 @@
 						<td>${products.product_Category }</td>
 						<td>${products.product_Condition }</td>
 						<td>${products.product_price }</td>
+						<td><a href="<spring:url value="/productList/viewProduct/${products.product_Id}"/>"
+						><span class="glyphicon glyphicon-info-sign"></span></a></td>
 					</tr>
 				</c:forEach>
 			</table>
