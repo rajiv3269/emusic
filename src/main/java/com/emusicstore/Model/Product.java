@@ -1,9 +1,15 @@
 package com.emusicstore.Model;
 
-public class Product {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-	
-	private String product_Id;
+@Entity
+public class Product {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int product_Id;
 	private String product_Name;
 	private String product_Category;
 	private String product_Description;
@@ -13,10 +19,11 @@ public class Product {
 	private int product_unitInStock;
 	private String product_Manufacturer;
 	
-	public String getProduct_Id() {
+	
+	public int getProduct_Id() {
 		return product_Id;
 	}
-	public void setProduct_Id(String product_Id) {
+	public void setProduct_Id(int product_Id) {
 		this.product_Id = product_Id;
 	}
 	public String getProduct_Name() {

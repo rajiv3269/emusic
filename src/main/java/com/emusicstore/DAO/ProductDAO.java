@@ -11,7 +11,7 @@ public class ProductDAO {
 	public List<Product> getProducts() {
 		Product product = new Product();
 		List<Product> productList = new ArrayList<Product>();
-		product.setProduct_Id("123");
+		product.setProduct_Id(123);
 		product.setProduct_Name("Shampoo");
 		product.setProduct_Category("HairCare");
 		product.setProduct_Description("Use for long hairs");
@@ -21,7 +21,7 @@ public class ProductDAO {
 		product.setProduct_unitInStock(11);
 		product.setProduct_Manufacturer("PANTENE");
 		Product product2 = new Product();
-		product2.setProduct_Id("124");
+		product2.setProduct_Id(124);
 		product2.setProduct_Name("Soap");
 		product2.setProduct_Category("Health");
 		product2.setProduct_Description("Use for hygene");
@@ -31,7 +31,7 @@ public class ProductDAO {
 		product2.setProduct_unitInStock(11);
 		product2.setProduct_Manufacturer("DETTOL");
 		Product product3 = new Product();
-		product3.setProduct_Id("125");
+		product3.setProduct_Id(125);
 		product3.setProduct_Name("Pencil");
 		product3.setProduct_Category("Learn");
 		product3.setProduct_Description("Use to Write");
@@ -47,12 +47,12 @@ public class ProductDAO {
 		return productList;
 	}
 
-	public Product getProductbyId(String productId) throws IOException {
+/*	public Product getProductbyId(int productId) throws IOException {
 		for(Product product:getProducts()){
 			if(product.getProduct_Id().equals(productId)){
 				return product;
 			}
 		}
 		throw new IOException("Product not found");
-	}
+	}*/
 }
