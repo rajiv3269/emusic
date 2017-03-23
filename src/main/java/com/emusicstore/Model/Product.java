@@ -18,7 +18,6 @@ public class Product {
 	private String product_Status;
 	private int product_unitInStock;
 	private String product_Manufacturer;
-	private String TEST12334;
 	
 	public int getProduct_Id() {
 		return product_Id;
