@@ -18,7 +18,7 @@ public class Product {
 	private String product_Status;
 	private int product_unitInStock;
 	private String product_Manufacturer;
-	
+	private String Test;
 	
 	public int getProduct_Id() {
 		return product_Id;
